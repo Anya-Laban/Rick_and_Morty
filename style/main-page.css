@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+:root{
+    --irish_grover: 'Irish Grover', cursive;
+    font-family: var(--irish_grover);
+    font-size: 10px;
+}
+body{
+    margin: 0;
+}
+.wraper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 800px;
+    background-image: url(../img/bg.jpg);
+    background-repeat:round ;
+}
+.container{
+    display: flex;
+    width: 80%;
+    margin: 3rem auto;
+}
+/*------------header----------------*/
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header img{
+    width: 40%;
+}
+
+/*------------nav----------------*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    display: flex;
+    width: 26%;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+    background-color: #C4C4C4;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 3vh;
+    color: #000000;
+    transition: 1s;
+}
+.nav-item:hover{
+    box-shadow: 4px 4px 14px 14px rgba(0, 26, 255, 0.75) ;
+}
+/*------------cards----------------*/
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 26%;
+    margin-bottom: 9rem;
+}
+.card img{
+    width: 100%;
+    border-radius: 13%;
+    transition: 1s;
+}
+.card img:hover{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+}
+
+

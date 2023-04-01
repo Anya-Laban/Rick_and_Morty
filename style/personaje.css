@@ -1,0 +1,79 @@
+@import url(./main-page.css);
+
+/*-----header,header-img,container,nav-item  import main-page.css------*/
+
+.btn-back{
+    font-size: 2vw;
+    border-radius: 4%;
+    position: absolute;
+    width: 10%;
+    right: 2%;
+    top: 10%;
+}
+.main-container{
+    display: flex; 
+    margin-bottom: 10rem; 
+    position: relative;
+    justify-content: space-between;
+}
+
+.nav-personaje{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.nav-personaje input{
+    display: none;
+}
+.nav-personaje img{
+    width: 90%;
+    border-radius: 13%;
+    transition: 1s;
+}
+.personaje-nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-personaje-span{
+    width: 100%;
+    border-radius: 30px;
+    margin: 5rem 0 1rem;
+}
+.nav-item:hover +img{
+    box-shadow: 4px 4px 14px 14px rgba(0, 26, 255, 0.75) ;
+}
+.nav-personaje>input:checked + .personaje-nav-item>.nav-personaje-span{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+}
+.nav-personaje>input:checked + .personaje-nav-item>img{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+}
+.video{
+    position: fixed;
+    display: none;
+    right: 6%;
+    top: 20%;
+    width: 60%;
+}
+.nav-personaje>input:checked +label[for="personaje1"] ~ .personaje1-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}
+.nav-personaje>input:checked +label[for="personaje2"] ~ .personaje2-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}
+.nav-personaje>input:checked +label[for="personaje3"] ~ .personaje3-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}
+.nav-personaje>input:checked +label[for="personaje4"] ~ .personaje4-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}
+.nav-personaje>input:checked +label[for="personaje5"] ~ .personaje5-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}

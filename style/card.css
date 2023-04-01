@@ -1,0 +1,15 @@
+@import url(../style/main-page.css);
+
+.card-video{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5% 0;
+}
+.btn-back{
+    font-size: 2vw;
+    border-radius: 4%;
+    position: absolute;
+    width: 10%;
+    right: 2%;
+    top: 10%;
+}

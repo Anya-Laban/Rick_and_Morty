@@ -1,0 +1,64 @@
+@import url(./main-page.css);
+/*-----header,header-img,container,nav-item  import main-page.css------*/
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.nav-seasons{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    min-height: 40vh;
+    overflow: hidden;
+}
+.nav-seasons>input{
+    display: none;
+}
+.season-nav-item{
+    display: flex;
+    width: 85%;
+    padding: 2vh;
+    margin: 1.5rem 0;
+}
+
+.nav-seasons>input:checked + .season-nav-item{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+}
+.video{
+    display: none;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.video>iframe{
+    width: 100%;
+}
+.nav-seasons>input:checked +label[for="season1"]~ .season1-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}
+.nav-seasons>input:checked +label[for="season2"]~ .season2-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}
+.nav-seasons>input:checked +label[for="season3"] ~ .season3-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}
+.nav-seasons>input:checked +label[for="season4"]~ .season4-video{
+    box-shadow: 4px 4px 14px 14px rgba(132, 255, 0, 0.75);
+    display: flex;
+}
+.btn-back{
+    font-size: 2vw;
+    border-radius: 4%;
+    position: fixed;
+    width: 10%;
+    right: 5%;
+    top: 10%;
+}
